@@ -1,0 +1,20 @@
+name = "cf-email-api"
+main = "src/index.ts"
+compatibility_date = "2026-04-08"
+compatibility_flags = ["nodejs_compat"]
+
+[observability]
+enabled = true
+
+[vars]
+DEFAULT_TTL = "600"
+DEFAULT_TTL_UNIT = "seconds"
+ENABLE_AI = "true"
+REQUIRE_AUTH = "false"
+
+[[kv_namespaces]]
+binding = "EMAIL_KV"
+id = "755616fa579d44ebb90115d85ea16e83"
+
+[ai]
+binding = "AI"
